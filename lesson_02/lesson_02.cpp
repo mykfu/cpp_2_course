@@ -1,81 +1,29 @@
-﻿// 05-901-project.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// lesson_02.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
 #include <iostream>
-#include <string>
-#include "LinkedList.h"
-
+#include "Complex.h"
 using namespace std;
-
-void func();
-
-struct Student {
-	char fio[50];
-	int age;
-	char group[7];
-};
-
-class Circle {
-
-	// private, protected, public
-private:
-	double radius;
-	string color;
-
-public:
-	Circle() {
-		this->radius = 0.0;
-		this->color = "white";
-	}
-
-	Circle(double radius, string color) {
-		this->radius = radius;
-		this->color = color;
-	}
-
-	double getRadius() {
-		return radius;
-	}
-
-	string getColor() {
-		return color;
-	}
-
-	void setRadius(double radius) {
-		this->radius = radius;
-	}
-
-	void print() {
-		cout << color << " circle with radius " << radius << endl;
-	}
-
-};
 
 int main()
 {
-	Student ivan = { "Ivanov", 18, "05-901" };
+	Complex c1;
+	cout << c1;
 
-	cout << ivan.fio << endl;
-	
-	Circle circle1(1, "red");
+	Complex c2(3, 2);
+	cout << c2;
 
-	cout << circle1.getColor() << endl;
+	Complex c3(3);
 
-	circle1.print();
+	Complex sum = c2 + c2;
+	c2.operator+(c2);
 
+	cout << c2;
+	Complex c;
 
-	Node el3(3);
-	Node el2(2, &el3);
-	Node el1(1, &el2);
-	LinkedList list(&el1);
-	list.print();
-	cout << endl;
-	LinkedList list2(nullptr);
-	list2.add(100);
-	list2.print();
+	cin >> c;
+	cout << c;
 
-
-	func();
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
