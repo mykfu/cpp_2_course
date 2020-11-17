@@ -1,2 +1,10 @@
 ﻿  05-901-project.cpp
-  05-901-project.vcxproj -> C:\Users\Администратор\source\repos\05-901-project\Debug\05-901-project.exe
+  LinkedList.cpp
+  Node.cpp
+  Создание кода...
+05-901-project.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall Node<int>::Node<int>(int)" (??0?$Node@H@@QAE@H@Z) в функции _main
+05-901-project.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall Node<int>::Node<int>(int,class Node<int> *)" (??0?$Node@H@@QAE@HPAV0@@Z) в функции _main
+05-901-project.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall LinkedList<int>::LinkedList<int>(class Node<int> *)" (??0?$LinkedList@H@@QAE@PAV?$Node@H@@@Z) в функции _main
+05-901-project.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __thiscall LinkedList<int>::print(void)" (?print@?$LinkedList@H@@QAEXXZ) в функции _main
+05-901-project.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __thiscall LinkedList<int>::add(int)" (?add@?$LinkedList@H@@QAEXH@Z) в функции _main
+C:\Users\Администратор\source\repos\05-901-project\Debug\05-901-project.exe : fatal error LNK1120: неразрешенных внешних элементов: 5

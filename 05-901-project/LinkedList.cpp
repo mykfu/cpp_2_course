@@ -3,19 +3,27 @@
 using namespace std;
 
 
-LinkedList::LinkedList() {
+template<class T>
+LinkedList<T>::LinkedList()
+{
 	this->head = nullptr;
 }
 
-LinkedList::LinkedList(Node* head) {
+template<class T>
+LinkedList<T>::LinkedList(Node<T>* head)
+{
 	this->head = head;
 }
 
-Node* LinkedList::getHead() {
-	return head;
+template<class T>
+Node<T>* LinkedList<T>::getHead()
+{
+	return this->head;
 }
 
-void LinkedList::print() {
+template<class T>
+void LinkedList<T>::print()
+{
 	Node* current = head;
 	while (current != nullptr) {
 		cout << current->getValue() << ", ";
@@ -23,9 +31,12 @@ void LinkedList::print() {
 	}
 }
 
-void LinkedList::add(int new_value)
+template<class T>
+void LinkedList<T>::add(int new_value)
 {
-	if (head == nullptr) {
+	if (this->head == nullptr) {
 		head = new Node(new_value);
 	}
 }
+
+

@@ -2,17 +2,17 @@
 #include "Node.h"
 #include<iostream>
 using namespace std;
-
+template<class T>
 class LinkedList {
 private:
-	Node* head;
+	Node<T>* head;
 
 public:
 
 	LinkedList();
-	LinkedList(Node* head);
+	LinkedList(Node<T>* head);
 
-	Node* getHead();
+	Node<T>* getHead();
 
 	void print();
 

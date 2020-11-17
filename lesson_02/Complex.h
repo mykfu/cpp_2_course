@@ -1,8 +1,9 @@
 #pragma once
 #include<iostream>
+#include"Number.h"
 using namespace std;
 
-class Complex
+class Complex : public Number
 {
 private:
 	double re;

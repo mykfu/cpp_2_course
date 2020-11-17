@@ -1,24 +1,28 @@
 #include "Node.h"
-
-	Node::Node() {
+	template<class T>
+	Node<T>::Node() {
 		value = 0;
 		next = nullptr;
 	}
 
-	Node::Node(int value) {
+	template<class T>
+	Node<T>::Node(int value) {
 		this->value = value;
 	}
 
-	Node::Node(int value, Node* next) {
+	template<class T>
+	Node<T>::Node(int value, Node* next) {
 		this->value = value;
 		this->next = next;
 	}
 
-	int Node::getValue() {
+	template<class T>
+	T Node<T>::getValue() {
 		return value;
 	}
 
-	Node* Node::getNext() {
+	template<class T>
+	Node<T>* Node<T>::getNext() {
 		return next;
 	}
 
