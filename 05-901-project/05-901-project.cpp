@@ -64,13 +64,13 @@ int main()
 	circle1.print();
 
 
-	Node el3(3);
-	Node el2(2, &el3);
-	Node el1(1, &el2);
-	LinkedList list(&el1);
+	Node<int> el3(3);
+	Node<int> el2(2, &el3);
+	Node<int> el1(1, &el2);
+	LinkedList<int> list(&el1);
 	list.print();
 	cout << endl;
-	LinkedList list2(nullptr);
+	LinkedList<Node> list2(nullptr);
 	list2.add(100);
 	list2.print();
 

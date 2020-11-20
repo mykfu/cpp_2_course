@@ -1,8 +1,10 @@
 #pragma once
+template<class T> class List;
+template<class T>
 class Node
 {
 private:
-	int value;
+	T value;
 	Node* next;
 
 
@@ -12,8 +14,9 @@ public:
 	Node(int value);
 
 	Node(int value, Node* next);
-	int getValue();
+	T getValue();
 
 	Node* getNext();
+	friend class List<T>;
 };
 

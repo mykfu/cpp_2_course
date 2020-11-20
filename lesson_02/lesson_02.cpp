@@ -5,7 +5,7 @@
 #include "Complex.h"
 using namespace std;
 
-int main()
+void lesson_02()
 {
 	Complex c1;
 	cout << c1;
